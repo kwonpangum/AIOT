@@ -90,7 +90,7 @@ def main(args=None):
                     else:
                         pos_y = 0
 
-                elif center_x > cam_center_x + margin:
+                elif center_y > cam_center_y + margin:
                     print("til down : ", end=' ')
                     print(center_y - cam_center_y)
                     if pos_y + 1 <= 180:

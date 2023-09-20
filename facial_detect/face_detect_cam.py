@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture('/Users/pangumk/PycharmProjects/allaboutidea/AIOT/facial_detect/sample.mp4')
 
 
 # xml file path
@@ -22,7 +22,7 @@ while cam.isOpened():
     results = cascade.detectMultiScale(gray,            # input image
                                            scaleFactor= 1.1,# image pyrmid factor
                                            minNeighbors=5,  # neighbor obj minimum distance(pixel)
-                                           minSize=(20,20)  # minimum size of detected obj
+                                           minSize=(20, 20)  # minimum size of detected obj
                                            )
     for box in results:
             x, y, w, h = box
